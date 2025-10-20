@@ -33,10 +33,9 @@ const Navbar = () => {
                     <ul className='flex items-center gap-8'>
                         {[
                             { href: "/", label: "Home" },
-                            { href: "/features", label: "Features" },
-                            { href: "/pricing", label: "Pricing" },
                             { href: "/about", label: "About" },
-                            { href: "/contact", label: "Contact" }
+                            { href: "/contact", label: "Contact" },
+                            { href: "/features", label: "Features" },
                         ].map((link) => (
                             <li key={link.href}>
                                 <a 
@@ -60,7 +59,7 @@ const Navbar = () => {
                     {/* CTA Button */}
                     <button className='flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-green-600 hover:to-blue-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-green-400/25 group'>
                         <FaGithub size="1.2em" className='group-hover:rotate-12 transition-transform duration-300' />
-                        <span>GitHub</span>
+                        <a href="https://github.com/anuragsinghrajput123456789/PassOp" target='_blank'><span>GitHub</span></a>
                     </button>
                 </div>
 
